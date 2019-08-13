@@ -20,7 +20,7 @@ items:
           - containerPort: 18630
           env:
           - name: SDC_CONF_SDC_BASE_HTTP_URL
-            value: https://34.83.190.215:443
+            value: https://authsdc.onefoursix.com
           - name: SDC_CONF_HTTP_ENABLE_FORWARDED_REQUESTS
             value: true
 - apiVersion: v1
