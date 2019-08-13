@@ -14,7 +14,7 @@ items:
           app : authoring-datacollector
       spec:
         containers:
-        - name : datacollector
+        - name : authoring-datacollector
           image: streamsets/datacollector:latest
           ports:
           - containerPort: 18630
