@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-Metadata:
-  namespace: streamsets
+metadata:
   name: ns1
   labels:
     app : authoring-datacollector
