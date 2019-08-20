@@ -21,7 +21,7 @@ spec:
         ports:
         - containerPort: 18360
         env:
-        - name: HOST
-          valueFrom:
-            fieldRef:
-              fieldPath: status.podIP
+        - name: SDC_CONF_SDC_BASE_HTTP_URL
+          value: https://authsdc.onefoursix.com
+        - name: SDC_CONF_HTTP_ENABLE_FORWARDED_REQUESTS
+          value: true
