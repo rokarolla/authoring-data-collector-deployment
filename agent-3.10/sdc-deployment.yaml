@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+Metadata:
+  namespace: streamsets
+  name: ns1
+  labels:
+    app : authoring-datacollector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authoring-datacollector
+  template:
+    metadata:
+      labels:
+        app: authoring-datacollector
+    spec:
+      containers:
+      - name : authoring-datacollector
+        image: streamsets/datacollector:latest
+        ports:
+        - containerPort: 18360
+        env:
+        - name: HOST
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
