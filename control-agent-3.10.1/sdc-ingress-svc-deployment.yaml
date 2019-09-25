@@ -25,7 +25,7 @@ items:
           - containerPort: 18630
           env:
           - name: SDC_CONF_SDC_BASE_HTTP_URL
-            value: https://authsdc.onefoursix.com
+            value: https://<YOUR INGRESS CONTROLLER HOST>
           - name: SDC_CONF_HTTP_ENABLE_FORWARDED_REQUESTS
             value: true
 - apiVersion: v1
