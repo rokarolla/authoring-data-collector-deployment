@@ -5,7 +5,7 @@ items:
   kind: Deployment
   metadata:
     name: authoring-datacollector
-    namespace: ns1
+    namespace: streamsets
     labels:
       app : authoring-datacollector
   spec:
@@ -32,7 +32,7 @@ items:
   kind: Service
   metadata:
     name: authoring
-    namespace: ns1
+    namespace: streamsets
     labels:
       app: authoring-datacollector
   spec:
@@ -48,7 +48,7 @@ items:
   kind: Ingress
   metadata:
     name: authoring-datacollector
-    namespace: ns1
+    namespace: streamsets
     annotations:
       kubernetes.io/ingress.class: traefik
   spec:
