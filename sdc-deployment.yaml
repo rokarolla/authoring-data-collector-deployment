@@ -18,7 +18,7 @@ spec:
       - name : authoring-datacollector
         image: streamsets/datacollector:latest
         ports:
-        - containerPort: 18360
+        - containerPort: 18630
         env:
         - name: SDC_CONF_SDC_BASE_HTTP_URL
           value: https://authsdc.onefoursix.com
